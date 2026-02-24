@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "Quality_Of_Wine-EndtoEnd-"
 AUTHOR_USER_NAME = "Ranjeth Aswin R"
-SRC_REPO = "Quality of Wine"
+SRC_REPO = "Quality_of_Wine"
 AUTHOR_EMAIL = "cecsranjethaswinr23@gmail.com"
 
 
