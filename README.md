@@ -18,13 +18,14 @@
 
 # main workflows
 
---data ingestion--
-update config.yaml
-update schema.yaml
-update params.yaml
-update entity
-update configuration manager in src config
-update components
-update pipelines
-update main.py
-update dvc.yaml
+##--data ingestion--##
+
+1.update config.yaml()
+2.update schema.yaml
+3.update params.yaml
+4.update entity
+5.update configuration manager in src config.
+6.update components
+7.update pipelines
+8.update main.py
+9.update dvc.yaml
