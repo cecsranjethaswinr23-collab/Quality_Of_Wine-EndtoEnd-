@@ -1,15 +1,7 @@
-from Quality_of_Wine import logger
-#also can be written as from src.Quality of Wine import logging(that is why -e. is used for not using the from src.Quality of Wine import logging)
-
-#this import is after the updation of the stage_01_data_ingestion.py with pipeline codes
-from Quality_of_Wine.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from Quality_of_Wine.config.configuration import ConfigurationManager
 from Quality_of_Wine.components.data_ingestion import DataIngestion
+from Quality_of_Wine import logger
 
-
-"""     Actual Data Ingestion pipeline     """
-# NOTES
-"""     artifacts must be deleted before executing the main.py pipelines    """
 
 STAGE_NAME="Data Ingestion Stage"
 
@@ -33,3 +25,10 @@ if __name__ == '__main__':
         logger.info((f">>>>stage {STAGE_NAME} completed<<<<"))
     except Exception as e:
         logger.excpetion(e)
+
+"""
+
+next from here to test the pipeline , it has to be mentioned in 
+the main.py
+
+"""
