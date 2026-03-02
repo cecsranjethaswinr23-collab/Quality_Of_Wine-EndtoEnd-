@@ -1,8 +1,22 @@
 artifacts_root: artifacts
 
-
+# THIS IS DATA INGESTION PATH/PIPELINE
+# 1.includes artifacts folder creation 
+# 2.from the source URL the datais pulled using urlib
+# 3.a local data file
+# 4.an unzipped data file
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://github.com/cecsranjethaswinr23-collab/Quality_Of_Wine-EndtoEnd-/raw/refs/heads/main/winequality.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+#THIS DATA VALIDATION PATH/PIPELINE
+# 1.from where the file has to be searched/root dir
+# 2.type the path from where the file should be taken from(the path of the UNZIPPED FILE)
+# 3.
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/winequality-red.csv #the name of the unzipped file varies for every proj clearly(type the path from where the file should be taken from)
+  STATUS_FILE: artifacts/data_validation/status.txt
