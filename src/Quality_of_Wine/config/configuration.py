@@ -1,6 +1,6 @@
 from Quality_of_Wine.constants import *
 from Quality_of_Wine.utils.common import read_yaml,create_directories
-from Quality_of_Wine.entity.config_entity import DataIngestionConfig,DataValidationConfig
+from Quality_of_Wine.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig
 
 
 # Structue for the def functions below
@@ -48,3 +48,16 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+    
+    # Data Transformation part
+    def get_data_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+
+        create_directories([config.root_dir])
+
+        data_transformation_config = DataTransformationConfig(
+            root_dir=config.root_dir,
+            data_path=config.data_path,
+        )
+
+        return data_transformation_config

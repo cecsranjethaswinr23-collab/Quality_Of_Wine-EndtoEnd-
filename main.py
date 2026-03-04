@@ -5,12 +5,15 @@ from Quality_of_Wine import logger
 #these imports is after the updation of the stage_01_data_ingestion.py with pipeline codes
 from Quality_of_Wine.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from Quality_of_Wine.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
+from Quality_of_Wine.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
+
 
 from Quality_of_Wine.config.configuration import ConfigurationManager
 from Quality_of_Wine.components.data_ingestion import DataIngestion
 
 
-"""     Actual Data Ingestion pipeline     """
+# Actual Data Ingestion pipeline
+
 # NOTES
 """     artifacts must be deleted before executing the main.py pipelines    """
 
@@ -26,7 +29,7 @@ except Exception as e:
 
 
 
-"""     Actual Data Validation pipeline     """
+# Actual Data Validation pipeline
 
 # NOTES
 """     artifacts must be deleted before executing the main.py pipelines    """
@@ -35,6 +38,20 @@ STAGE_NAME = "Data Validation stage"
 try:
    logger.info(f">>>> stage {STAGE_NAME} started <<<<") 
    data_ingestion = DataValidationTrainingPipeline()
+   data_ingestion.main()
+   logger.info(f">>>> stage {STAGE_NAME} completed <<<<")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
+# Actual Data Transformation Pipeline
+
+# Notes
+"""     artifacts must be deleted before executing the main.py pipelines    """
+STAGE_NAME = "Data Transformation stage"
+try:
+   logger.info(f">>>> stage {STAGE_NAME} started <<<<") 
+   data_ingestion = DataTransformationTrainingPipeline()
    data_ingestion.main()
    logger.info(f">>>> stage {STAGE_NAME} completed <<<<")
 except Exception as e:
