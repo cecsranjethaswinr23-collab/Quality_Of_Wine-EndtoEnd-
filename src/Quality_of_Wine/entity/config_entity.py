@@ -26,3 +26,17 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
+
+
+# Entity of the Model Trainer part
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    train_data_path: Path
+    test_data_path: Path  
+    model_name: str           # takes the model name from the config.yaml 
+    alpha: float              # hyperparams
+    l1_ratio: float           # hyperparams
+    target_column: str
+
+
