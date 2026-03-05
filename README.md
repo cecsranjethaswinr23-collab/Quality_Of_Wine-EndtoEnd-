@@ -18,8 +18,8 @@
 
 # main workflows
 
-## --data ingestion-- ##
-
+## --data ingestion,validation& tansformation (follows same steps)-- ##
+## --Model trainer is little different but similiar ##
 1.update config.yaml(# update it first )
 2.update schema.yaml()
 3.update params.yaml()
@@ -29,3 +29,4 @@
 7.update pipelines()
 8.update main.py()
 9.update dvc.yaml()
+
