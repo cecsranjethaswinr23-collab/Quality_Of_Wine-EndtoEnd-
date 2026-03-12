@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/26e9adb6fbdd45e580a815fc511e3bf8/artifacts
+end_time: 1773337125331
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 26e9adb6fbdd45e580a815fc511e3bf8
+run_name: spiffy-bird-584
+run_uuid: 26e9adb6fbdd45e580a815fc511e3bf8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773337114322
+status: 3
+tags: []
+user_id: Aswin

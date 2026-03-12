@@ -5,11 +5,12 @@ from Quality_of_Wine import logger
 from Quality_of_Wine.config.configuration import ConfigurationManager
 from Quality_of_Wine.components.data_ingestion import DataIngestion
 
-#these imports is after the updation of the stage_01_data_ingestion.py with pipeline codes
+#these imports is after the updation of the stages_00_phases.py in the src/pipelines/
 from Quality_of_Wine.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from Quality_of_Wine.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from Quality_of_Wine.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
 from Quality_of_Wine.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
+from Quality_of_Wine.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 
 
 # Actual Data Ingestion pipeline
@@ -76,3 +77,16 @@ except Exception as e:
         logger.exception(e)
         raise e
 
+
+
+# Actual Model Evaluation Pipeline
+"""     artifacts must be deleted before executing the main.py pipelines    """
+STAGE_NAME = "Model evaluation stage"
+try:
+   logger.info(f">>>> stage {STAGE_NAME} started <<<<")
+   obj = ModelEvaluationTrainingPipeline()
+   obj.main()
+   logger.info(f">>>> stage {STAGE_NAME} completed <<<<")
+except Exception as e:
+        logger.exception(e)
+        raise e

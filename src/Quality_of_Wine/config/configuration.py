@@ -1,6 +1,6 @@
 from Quality_of_Wine.constants import *
 from Quality_of_Wine.utils.common import read_yaml,create_directories
-from Quality_of_Wine.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig
+from Quality_of_Wine.entity.config_entity import DataIngestionConfig,DataValidationConfig,DataTransformationConfig,ModelTrainerConfig,ModelEvaluationConfig
 
 
 # Structue for the def functions below
@@ -62,7 +62,7 @@ class ConfigurationManager:
 
         return data_transformation_config
     
-    # Data Transformation part
+    # Model Trainer part
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
         params = self.params.ElasticNet
@@ -82,3 +82,25 @@ class ConfigurationManager:
         )
 
         return model_trainer_config
+    
+    # Model evaluation part
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        params = self.params.ElasticNet
+        schema = self.schema.TARGET_COLUMN
+
+        create_directories([config.root_dir])
+
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir=config.root_dir,
+            test_data_path=config.test_data_path,
+            model_path = config.model_path,
+            all_params=params,
+            metric_file_name = config.metric_file_name,
+            target_column = schema.name,
+            mlflow_uri="https://dagshub.com/cecsranjethaswinr23-collab/Quality_Of_Wine-EndtoEnd-.mlflow",
+           
+        )
+
+        return model_evaluation_config
+

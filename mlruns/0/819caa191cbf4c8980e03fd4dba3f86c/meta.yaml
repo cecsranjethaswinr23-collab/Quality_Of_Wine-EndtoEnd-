@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/819caa191cbf4c8980e03fd4dba3f86c/artifacts
+end_time: 1773336394369
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 819caa191cbf4c8980e03fd4dba3f86c
+run_name: gifted-worm-61
+run_uuid: 819caa191cbf4c8980e03fd4dba3f86c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773336386504
+status: 4
+tags: []
+user_id: Aswin

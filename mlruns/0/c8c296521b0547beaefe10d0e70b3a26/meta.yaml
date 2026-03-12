@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/c8c296521b0547beaefe10d0e70b3a26/artifacts
+end_time: 1773337188173
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c8c296521b0547beaefe10d0e70b3a26
+run_name: bouncy-bug-951
+run_uuid: c8c296521b0547beaefe10d0e70b3a26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773337181652
+status: 3
+tags: []
+user_id: Aswin
