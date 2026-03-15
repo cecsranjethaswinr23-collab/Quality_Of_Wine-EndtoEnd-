@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/16ec6a78e61f4718ba66af3616f93f98/artifacts
+end_time: 1773422518099
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 16ec6a78e61f4718ba66af3616f93f98
+run_name: thoughtful-moose-916
+run_uuid: 16ec6a78e61f4718ba66af3616f93f98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773422509055
+status: 3
+tags: []
+user_id: Aswin

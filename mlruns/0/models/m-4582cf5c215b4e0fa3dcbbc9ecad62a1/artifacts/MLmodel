@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/models/m-4582cf5c215b4e0fa3dcbbc9ecad62a1/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.19
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-4582cf5c215b4e0fa3dcbbc9ecad62a1
+model_size_bytes: 912
+model_uuid: m-4582cf5c215b4e0fa3dcbbc9ecad62a1
+prompts: null
+run_id: e1405aaaad084fc3837ddd5078cfc7d4
+utc_time_created: '2026-03-15 13:31:30.518979'

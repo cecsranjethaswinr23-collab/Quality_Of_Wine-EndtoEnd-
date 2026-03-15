@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/models/m-4582cf5c215b4e0fa3dcbbc9ecad62a1/artifacts
+creation_timestamp: 1773581490459
+experiment_id: '0'
+last_updated_timestamp: 1773581499782
+model_id: m-4582cf5c215b4e0fa3dcbbc9ecad62a1
+model_type: null
+name: model
+source_run_id: e1405aaaad084fc3837ddd5078cfc7d4
+status: 2
+status_message: null

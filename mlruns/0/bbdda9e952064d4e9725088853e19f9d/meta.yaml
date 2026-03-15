@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/bbdda9e952064d4e9725088853e19f9d/artifacts
+end_time: 1773422929979
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bbdda9e952064d4e9725088853e19f9d
+run_name: gentle-lynx-704
+run_uuid: bbdda9e952064d4e9725088853e19f9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1773422920409
+status: 3
+tags: []
+user_id: Aswin
