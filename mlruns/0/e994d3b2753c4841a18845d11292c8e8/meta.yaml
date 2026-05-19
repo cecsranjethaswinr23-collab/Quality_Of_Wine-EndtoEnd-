@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Aswin/MLprojects/Quality_Of_wine%28EndtoEnd%20ML%29/Quality_Of_Wine-EndtoEnd-/mlruns/0/e994d3b2753c4841a18845d11292c8e8/artifacts
+end_time: 1779180020435
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e994d3b2753c4841a18845d11292c8e8
+run_name: skittish-dog-640
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779179999423
+status: 3
+tags: []
+user_id: Aswin
